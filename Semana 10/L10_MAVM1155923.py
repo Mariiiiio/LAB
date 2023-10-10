@@ -20,8 +20,8 @@ def decimal_hexadecimal(decimal):
     hexadecimal = ""
     while decimal > 0:
         residuo = decimal % 16
-        verdadero_caracter = obtener_hexadecimal(residuo)
-        hexadecimal = verdadero_caracter + hexadecimal
+        x = obtener_hexadecimal(residuo)
+        hexadecimal = x + hexadecimal
         decimal = int(decimal / 16)
     return hexadecimal
 
